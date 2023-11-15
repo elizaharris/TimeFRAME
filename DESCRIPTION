@@ -1,0 +1,42 @@
+Package: TimeFRAME
+Title: Bayesian Data Analysis of Isotopic Measurement Time Series
+Version: 0.0.0.9001
+Authors@R: 
+    person("Philipp", "Fischer", , "fischphi@student.ethz.ch", role = c("aut", "cre"))
+Description: TimeFRAME is a data analysis package that can be used for Bayesian estimation of source contributions and fractionation of isotopic measurement time series. It uses Bayesian parameter estimation with Stan to estimate uncertainty and produce posterior samples. Additionally, the package provides utility functions to simulate measurements and isotopic signature data for the study of nitrous oxide.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    magrittr,
+    tibble,
+    dplyr,
+    tidyr,
+    readr,
+    stringr,
+    splines,
+    methods,
+    ggplot2,
+    Rcpp (>= 0.12.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    rstantools (>= 2.3.1)
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
