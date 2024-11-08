@@ -1,18 +1,19 @@
 # TimeFRAME
 > R package for the analysis of isotopic time series data using Bayesian hierarchical models implemented in Stan.
+> This package was created by Philipp Fischer during his ETHZ MSc thesis. See original package at: https://github.com/PhilFischer/TimeFRAME
 
 ## Installation
 Make sure R is updated and install TimeFRAME using the R console. On Windows [RTools](https://cran.r-project.org/bin/windows/Rtools/) will additionally be required.
 ```
 if (!require("devtools")) install.packages("devtools") 
-devtools::install_github("PhilFischer/TimeFRAME", build_vignettes = TRUE)
+devtools::install_github("elizaharris/TimeFRAME", build_vignettes = TRUE)
 ```
 
 TimeFRAME uses Stan as sampling library in the background. If there are any issues regarding this, please refer to the [RStan Documentation](https://mc-stan.org/users/interfaces/rstan).
 
 If you do not need additional documentation of the package provided as vignettes you can omit building them for faster installation times.
 ```
-devtools::install_github("PhilFischer/TimeFRAME", build_vignettes = FALSE)
+devtools::install_github("elizaharris/TimeFRAME", build_vignettes = FALSE)
 ```
 
 ## Usage
@@ -56,6 +57,12 @@ fit.hdgp <- fit_dgp(model, df, t = t, rho = 0.2, rho.r = 0.5, estim.rho = TRUE)
 ```
 
 ![appl_est_th](https://github.com/PhilFischer/TimeFRAME/assets/36499405/9b94e9af-80b4-44c4-80d2-d8a5dcc75e78)
+
+## Examples
+
+Download the full TimeFRAME repository or just the relevant example folder from https://gitlab.renkulab.io/eliza.harris/timeframe.
+
+You will find three folders containing example datasets and scripts as described in the TimeFRAME manuscript: gen-e_example, boma_application, incubation_application. Working through these examples will help you get started with TimeFRAME.
 
 ## References
 
